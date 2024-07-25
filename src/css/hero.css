@@ -14,6 +14,8 @@
   display: flex;
   flex-direction: column;
   gap: 212px;
+  height: 100vh;
+  padding-bottom: 32px;
 }
 .hero-title {
   flex-grow: 1;
@@ -27,7 +29,8 @@
 }
 .hero-link-container {
   display: flex;
-  padding-bottom: 32px;
+  padding-bottom: 0px;
+  margin-bottom: 0;
   gap: 4px;
 }
 .hero-list {
@@ -43,13 +46,20 @@
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 60px;
   height: 37px;
+  transition: border-color 250ms ease-in-out;
+}
+.hero-item:hover,
+.hero-link-mail:hover {
+  border-color: #fafafa;
 }
 .hero-item {
-  padding: 10px 11px;
   width: 37px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.hero-link {
+  padding: 10px 11px;
 }
 .hero-link-mail {
   padding: 10px 12px;
@@ -69,11 +79,11 @@
   }
 
   .hero-container {
-    gap: 187px;
+    /* gap: 187px; */
   }
 
   .hero-title {
-    padding-top: 300px;
+    /* padding-top: 300px; */
     font-size: 90px;
   }
 
