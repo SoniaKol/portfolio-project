@@ -9,6 +9,9 @@ import '../css/about-me-swiper.css';
 
 new Accordion('.accordion-container', {
   openOnInit: [0],
+  elementClass: 'about-me-item',
+  triggerClass: 'about-me-list-btn',
+  panelClass: 'about-me-list-panel',
 });
 
 const swiper = new Swiper('.swiper', {
@@ -17,19 +20,16 @@ const swiper = new Swiper('.swiper', {
     nextEl: '.swiper-button-next',
   },
   loop: true,
-
+  spaceBetween: 0,
   breakpoints: {
     320: {
       slidesPerView: 2,
-      spaceBetween: 0,
     },
     768: {
       slidesPerView: 3,
-      spaceBetween: 0,
     },
     1440: {
       slidesPerView: 6,
-      spaceBetween: 0,
     },
   },
   grabCursor: true,
