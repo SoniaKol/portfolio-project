@@ -1,0 +1,105 @@
+.benefits {
+  margin-bottom: 64px;
+}
+
+.benefits-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: rgba(250, 250, 250, 0.4);
+}
+.benefits-list {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.benefits-item {
+  padding: 24px;
+  background-color: #242527;
+  border-radius: 20px;
+  max-width: 344px;
+}
+.benefits-item-icon-container {
+  background-color: #ed3b44;
+  border-radius: 10px;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 64px;
+}
+
+.benefits-item-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+  margin-bottom: 8px;
+}
+.benefits-item-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: rgba(250, 250, 250, 0.6);
+}
+.benefits-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 187px;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 60px;
+  height: 55px;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+}
+
+@media screen and (min-width: 768px) {
+  .benefits {
+    margin-bottom: 96px;
+  }
+
+  .benefits-list {
+    margin-bottom: 64px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .benefits-item {
+    width: calc(((100% - 16px) / 2));
+  }
+
+  .benefits-item-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    color: #fafafa;
+    margin-bottom: 8px;
+  }
+  .benefits-item-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    color: rgba(250, 250, 250, 0.6);
+  }
+}
+@media screen and (min-width: 1440px) {
+  .benefits-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .benefits-list {
+    margin-top: 0;
+    width: 680px;
+  }
+}
