@@ -13,3 +13,5 @@ function burgerBtnHandler() {
 function closeBtnHandler() {
   mobileMenu.classList.remove('is-open');
 }
+
+export { burgerBtnHandler, closeBtnHandler };

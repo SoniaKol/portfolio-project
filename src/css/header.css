@@ -60,13 +60,27 @@
     font-weight: 500;
     font-size: 16px;
     letter-spacing: -0.02em;
-    text-decoration: underline;
     text-decoration-skip-ink: none;
     color: #fafafa;
     background-color: transparent;
     border: none;
     position: relative;
-    transition: color 250ms ease-in-out;
+    transition: transform 250ms ease-in-out;
+    position: relative;
+  }
+
+  .header-menu-btn::after {
+    content: '';
+    position: absolute;
+    bottom: 8px;
+    left: 13px;
+    width: 40px;
+    height: 1px;
+    background-color: #fafafa;
+  }
+  .header-menu-btn:hover,
+  .header-menu-btn:focus {
+    transform: scale(1.1);
   }
   .header-link {
     display: flex;
@@ -75,7 +89,7 @@
     border-radius: 60px;
     width: 163px;
     height: 55px;
-    background: #ed3b44;
+    background-color: #ed3b44;
     font-weight: 500;
     font-size: 16px;
     letter-spacing: -0.02em;
@@ -115,8 +129,7 @@
     transition: color 250ms ease-in-out;
   }
 
-  .header-nav-item:hover,
-  .header-menu-btn:hover {
+  .header-nav-item:hover {
     color: #ed3b44;
   }
 }

@@ -1,9 +1,3 @@
-.about-me-list {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
 .about-me-item {
   background-color: #1c1d20;
   margin-top: 0;
@@ -22,7 +16,9 @@
 .about-me-item .about-me-list-btn {
   font: inherit;
   color: rgba(250, 250, 250, 0.4);
-  padding: 0 0 12px 0;
+  padding-top: 20px;
+  padding-bottom: 32px;
+  padding-left: 0;
 }
 
 .about-me-item .about-me-list-btn::after {
@@ -38,9 +34,6 @@
   content: url(../img/ac-close.svg);
 }
 
-.about-me-item .about-me-list-title {
-  padding-bottom: 12px;
-}
 .about-me-list-title {
   font-weight: 600;
   font-size: 16px;
@@ -71,26 +64,14 @@
 }
 
 @media screen and (min-width: 768px) {
-  .about-me-list {
-    gap: 32px;
-  }
-
   .about-me-item .about-me-list-btn {
-    padding: 0 0 16px 0;
+    padding-top: 32px;
   }
 
   .about-me-item .about-me-list-btn::after {
     padding: 10px;
     width: 40px;
     height: 40px;
-  }
-
-  .about-me-item .about-me-list-title {
-    padding-bottom: 32px;
-  }
-
-  .about-me-item .about-me-list-panel .about-me-list-text {
-    padding: 0 0 32px 0;
   }
 }
 
