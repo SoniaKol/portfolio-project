@@ -30,4 +30,4 @@ function closeMenuHandler(evt) {
   }
 }
 
-export { burgerBtn, menuBtnHandler, closeMenuHandler };
+export { burgerBtn, menuBtnHandler, closeMenuHandler, allPage };
