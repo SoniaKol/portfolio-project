@@ -132,4 +132,7 @@
   .header-nav-item:hover {
     color: #ed3b44;
   }
+  .header-nav-link {
+    scroll-behavior: smooth;
+  }
 }

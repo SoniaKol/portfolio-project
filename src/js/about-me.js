@@ -3,7 +3,6 @@ import 'accordion-js/dist/accordion.min.css';
 import Swiper from 'swiper';
 import 'swiper/css';
 import { Keyboard, Mousewheel, Autoplay } from 'swiper/modules';
-import 'swiper/css/navigation';
 import '../css/about-me-accordion.css';
 import '../css/about-me-swiper.css';
 
@@ -14,7 +13,7 @@ const aboutMeAcc = new Accordion('.accordion-container', {
   panelClass: 'about-me-list-panel',
 });
 
-const aboutMeSwiper = new Swiper('.swiper', {
+const aboutMeSwiper = new Swiper('.about-me-skills', {
   modules: [Autoplay, Keyboard, Mousewheel],
   autoplay: {
     delay: 1000,

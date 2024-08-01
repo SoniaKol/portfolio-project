@@ -1,5 +1,5 @@
 .benefits {
-  margin-bottom: 64px;
+  padding-top: 64px;
 }
 
 .benefits-title {
@@ -70,7 +70,7 @@
 
 @media screen and (min-width: 768px) {
   .benefits {
-    margin-bottom: 96px;
+    padding-top: 97px;
   }
 
   .benefits-list {
@@ -99,6 +99,9 @@
   }
 }
 @media screen and (min-width: 1440px) {
+  .benefits {
+    padding-top: 164px;
+  }
   .benefits-container {
     display: flex;
     justify-content: space-between;

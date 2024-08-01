@@ -10,7 +10,7 @@
 .about-me-skills-item {
   margin: 0;
 }
-.about-me-skills-item div {
+.about-me-skills-item .about-me-skills-div {
   width: 130px;
   height: 130px;
   display: flex;
@@ -32,12 +32,12 @@
 .about-me-skills-btn::after {
   content: url('../img/arrow-narrow-right.svg');
 }
-.swiper-slide-active div {
+.swiper-slide-active .about-me-skills-div {
   background-color: #ed3b44;
 }
 
 @media screen and (min-width: 768px) {
-  .about-me-skills-item div {
+  .about-me-skills-item .about-me-skills-div {
     height: 200px;
     width: 200px;
     font-size: 20px;
