@@ -62,4 +62,4 @@ async function getReviews() {
   markUp(reviews);
 }
 
-getReviews();
+export { getReviews, reviewsSwiper };

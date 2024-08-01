@@ -1,4 +1,4 @@
-import { burgerBtn, allPage } from './header';
+import { burgerBtn } from './header';
 
 const mobileMenu = document.querySelector('.mobile-menu');
 const closeBtn = document.querySelector('.js-mobile-menu-close');
@@ -10,17 +10,17 @@ navLink.forEach(link => link.addEventListener('click', closeMobMenu));
 
 function burgerBtnHandler() {
   mobileMenu.classList.add('is-open');
-  allPage.classList.add('no-scroll');
+  document.body.classList.add('no-scroll');
 }
 
 function closeBtnHandler() {
   mobileMenu.classList.remove('is-open');
-  allPage.classList.remove('no-scroll');
+  document.body.classList.remove('no-scroll');
 }
 
 function closeMobMenu() {
   mobileMenu.classList.remove('is-open');
-  allPage.classList.remove('no-scroll');
+  document.body.classList.remove('no-scroll');
 }
 
 export { burgerBtnHandler, closeBtnHandler, closeMobMenu };

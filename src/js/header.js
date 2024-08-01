@@ -1,12 +1,12 @@
 const menuBtn = document.querySelector('.js-header-menu-btn');
 const navList = document.querySelector('.js-header-nav-list');
 const burgerBtn = document.querySelector('.js-burger-menu');
-const allPage = document.querySelector('body');
 
 let IS_OPEN = false;
 
 menuBtn.addEventListener('click', menuBtnHandler);
-allPage.addEventListener('click', closeMenuHandler);
+document.body.addEventListener('click', closeMenuHandler);
+document.addEventListener('scroll', closeMenuOnScrollHandler);
 
 function menuBtnHandler() {
   if (!IS_OPEN) {
@@ -30,4 +30,17 @@ function closeMenuHandler(evt) {
   }
 }
 
-export { burgerBtn, menuBtnHandler, closeMenuHandler, allPage };
+function closeMenuOnScrollHandler() {
+  if (IS_OPEN) {
+    navList.classList.remove('is-open');
+    IS_OPEN = false;
+    return;
+  }
+}
+
+export {
+  burgerBtn,
+  menuBtnHandler,
+  closeMenuHandler,
+  closeMenuOnScrollHandler,
+};
