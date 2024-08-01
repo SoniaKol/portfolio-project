@@ -5,15 +5,11 @@ import 'swiper/css/navigation';
 import '../css/projects.css';
 
 const projectSwiper = new Swiper('.projects-swiper', {
-  // configure Swiper to use modules
   modules: [Navigation, Keyboard, Mousewheel, Autoplay],
   navigation: {
     nextEl: '.projects-btn-next',
     prevEl: '.projects-btn-prev',
   },
-  // autoplay: {
-  //   delay: 5000,
-  // },
   grabCursor: true,
   keyboard: {
     enabled: true,

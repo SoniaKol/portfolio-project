@@ -1,5 +1,6 @@
 .covers {
   position: relative;
+  height: 508px;
 }
 .covers-container {
   position: absolute;
@@ -56,6 +57,9 @@
 }
 
 @media screen and (min-width: 768px) {
+  .covers {
+    height: 100vh;
+  }
   .covers-container {
     height: 100vh;
   }
