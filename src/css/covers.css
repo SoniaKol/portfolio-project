@@ -1,0 +1,72 @@
+.covers {
+  position: relative;
+}
+.covers-container {
+  position: absolute;
+  right: -800px;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 508px;
+  background-image: url('../img/covers-bg.png'), url('../img/covers-bg.png');
+  background-size: cover;
+  background-position: top, bottom;
+}
+
+@media (min-resolution: 192dpi) {
+  .covers-container {
+    background-image: url('../img/covers-bg@2x.png'),
+      url('../img/covers-bg@2x.png');
+  }
+}
+
+.covers-line {
+  height: 163px;
+  display: flex;
+  transform: rotate(16deg);
+  display: flex;
+  gap: 10px;
+  margin-bottom: 32px;
+}
+
+.covers-item {
+  flex-shrink: 0;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  animation-name: marqueeLine;
+  animation-duration: 15s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  width: 282px;
+  height: 163px;
+}
+
+@keyframes marqueeLine {
+  from {
+    transform: translateX(-20%);
+  }
+
+  to {
+    transform: translateX(-180%);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .covers-container {
+    height: 100vh;
+  }
+  .covers-line {
+    height: 314px;
+    gap: 20px;
+    margin-bottom: 64px;
+  }
+
+  .covers-item {
+    width: 544px;
+    height: 314px;
+  }
+}
