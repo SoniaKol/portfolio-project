@@ -16,7 +16,7 @@
     <script type="module" crossorigin src="/portfolio-project/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/portfolio-project/assets/vendor-a078cb4d.js">
     <link rel="stylesheet" href="/portfolio-project/assets/vendor-12203ec5.css">
-    <link rel="stylesheet" href="/portfolio-project/assets/index-13d9f0ec.css">
+    <link rel="stylesheet" href="/portfolio-project/assets/index-daad8631.css">
   </head>
   <body>
     <header>
@@ -50,7 +50,7 @@
         </li>
       </ul>
     </nav>
-    <a href="" class="header-link">Order the project</a>
+    <a href="#footer-id" class="header-link">Order the project</a>
   </div>
 </section>
 
@@ -71,6 +71,57 @@
         >lloydjefferson@gmail.com</a
       >
     </div>
+  </div>
+</section>
+
+      <section class="mobile-menu">
+  <div class="container mobile-menu-container">
+    <button type="button" class="mobile-menu-close-btn js-mobile-menu-close">
+      <svg
+        class="mobile-menu-close-icon"
+        width="28"
+        height="28"
+        viewBox="0 0 28 28"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M21.7071 6.29289C22.0976 6.68342 22.0976 7.31658 21.7071 7.70711L7.70711 21.7071C7.31658 22.0976 6.68342 22.0976 6.29289 21.7071C5.90237 21.3166 5.90237 20.6834 6.29289 20.2929L20.2929 6.29289C20.6834 5.90237 21.3166 5.90237 21.7071 6.29289Z"
+          fill="#FAFAFA"
+        />
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M6.29289 6.29289C6.68342 5.90237 7.31658 5.90237 7.70711 6.29289L21.7071 20.2929C22.0976 20.6834 22.0976 21.3166 21.7071 21.7071C21.3166 22.0976 20.6834 22.0976 20.2929 21.7071L6.29289 7.70711C5.90237 7.31658 5.90237 6.68342 6.29289 6.29289Z"
+          fill="#FAFAFA"
+        />
+      </svg>
+    </button>
+    <ul class="mobile-menu-list js-header-nav-list">
+      <li class="mobile-menu-item">
+        <a href="#about-me-id" class="mobile-menu-link js-mobile-menu-link"
+          >About me</a
+        >
+      </li>
+      <li class="mobile-menu-item">
+        <a href="#benefits-id" class="mobile-menu-link js-mobile-menu-link"
+          >Benefits</a
+        >
+      </li>
+      <li class="mobile-menu-item">
+        <a href="#projects-id" class="mobile-menu-link js-mobile-menu-link"
+          >Projects</a
+        >
+      </li>
+      <li class="mobile-menu-item">
+        <a href="#faq-id" class="mobile-menu-link js-mobile-menu-link">FAQ</a>
+      </li>
+    </ul>
+    <a href="#footer-id" class="mobile-menu-order js-mobile-menu-link"
+      >Order the project</a
+    >
   </div>
 </section>
 
@@ -337,7 +388,7 @@
           </p>
         </li>
       </ul>
-      <a href="" class="benefits-link">Order the project</a>
+      <a href="#footer-id" class="benefits-link">Order the project</a>
     </div>
   </div>
 </section>
@@ -815,59 +866,45 @@
 </section>
 
     </main>
-    <footer></footer>
-    <section class="mobile-menu">
-  <div class="container mobile-menu-container">
-    <button type="button" class="mobile-menu-close-btn js-mobile-menu-close">
-      <svg
-        class="mobile-menu-close-icon"
-        width="28"
-        height="28"
-        viewBox="0 0 28 28"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
+    <footer id="footer-id">
+      <div class="container footer-container">
+  <h2 class="footer-title">
+    <img src="../img/header-logo.png" alt="" class="footer-logo" />
+    Let’s <span>work</span> <br />together
+  </h2>
+  <form class="footer-form">
+    <label class="footer-form-email">
+      <input
+        type="email"
+        class="footer-form-email-input"
+        placeholder="clients@gmail.com"
+        pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+        required
+      />
+    </label>
+    <label class="footer-form-comment">
+      <input
+        type="text"
+        class="footer-form-comment-input"
+        placeholder="comments"
+      />
+    </label>
+    <button type="submit" class="footer-form-button">Send</button>
+  </form>
+  <ul class="footer-list">
+    <li class="footer-item">
+      <a href="mailto:lloydjefferson@gmail.com" class="footer-link"
+        >lloydjefferson@gmail.com</a
       >
-        <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
-          d="M21.7071 6.29289C22.0976 6.68342 22.0976 7.31658 21.7071 7.70711L7.70711 21.7071C7.31658 22.0976 6.68342 22.0976 6.29289 21.7071C5.90237 21.3166 5.90237 20.6834 6.29289 20.2929L20.2929 6.29289C20.6834 5.90237 21.3166 5.90237 21.7071 6.29289Z"
-          fill="#FAFAFA"
-        />
-        <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
-          d="M6.29289 6.29289C6.68342 5.90237 7.31658 5.90237 7.70711 6.29289L21.7071 20.2929C22.0976 20.6834 22.0976 21.3166 21.7071 21.7071C21.3166 22.0976 20.6834 22.0976 20.2929 21.7071L6.29289 7.70711C5.90237 7.31658 5.90237 6.68342 6.29289 6.29289Z"
-          fill="#FAFAFA"
-        />
-      </svg>
-    </button>
-    <ul class="mobile-menu-list js-header-nav-list">
-      <li class="mobile-menu-item">
-        <a href="#about-me-id" class="mobile-menu-link js-mobile-menu-link"
-          >About me</a
-        >
-      </li>
-      <li class="mobile-menu-item">
-        <a href="#benefits-id" class="mobile-menu-link js-mobile-menu-link"
-          >Benefits</a
-        >
-      </li>
-      <li class="mobile-menu-item">
-        <a href="#projects-id" class="mobile-menu-link js-mobile-menu-link"
-          >Projects</a
-        >
-      </li>
-      <li class="mobile-menu-item">
-        <a href="#faq-id" class="mobile-menu-link js-mobile-menu-link">FAQ</a>
-      </li>
-    </ul>
-    <a href="" class="mobile-menu-order js-mobile-menu-link"
-      >Order the project</a
-    >
-  </div>
-</section>
+    </li>
+    <li class="footer-item">
+      <a href="tel:+3801111111111" class="footer-link">+380 11 1111 11 11</a>
+    </li>
+  </ul>
+</div>
 
-    
+    </footer>
+
     
   </body>
 </html>
