@@ -13,5 +13,6 @@ import {
 } from './js/mobile-menu';
 import { projectSwiper } from './js/projects';
 import { reviewsSwiper, getReviews } from './js/reviews';
+import { footerForm, footerFormHandler } from './js/work-together';
 
 getReviews();
