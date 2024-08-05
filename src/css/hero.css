@@ -1,14 +1,7 @@
 .hero {
-  background-image: url('../img/hero-tablet.png');
   background-position: -250px;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-@media screen and (min-resolution: 192dpi) {
-  .hero {
-    background-image: url('../img/hero-tablet@2x.png');
-  }
 }
 
 .hero-container {
@@ -72,6 +65,9 @@
 }
 
 @media screen and (min-width: 768px) {
+  .hero {
+    background-size: contain;
+  }
   .hero-title {
     font-size: 90px;
   }
@@ -100,15 +96,7 @@
 
 @media screen and (min-width: 1440px) {
   .hero {
-    background-image: url('../img/hero-desktop.png');
     background-position: left;
-    background-size: contain;
-  }
-
-  @media screen and (min-resolution: 192dpi) {
-    .hero {
-      background-image: url('../img/hero-desktop@2x.png');
-    }
   }
 
   .hero-title {

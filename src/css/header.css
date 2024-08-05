@@ -89,7 +89,6 @@
     border-radius: 60px;
     width: 163px;
     height: 55px;
-    background-color: #ed3b44;
     font-weight: 500;
     font-size: 16px;
     letter-spacing: -0.02em;
@@ -97,9 +96,6 @@
     transition: background-color 250ms ease-in-out;
   }
 
-  .header-link:hover {
-    background-color: #e0373f;
-  }
   .header-nav {
     display: block;
   }
@@ -129,9 +125,6 @@
     transition: color 250ms ease-in-out;
   }
 
-  .header-nav-item:hover {
-    color: #ed3b44;
-  }
   .header-nav-link {
     scroll-behavior: smooth;
   }

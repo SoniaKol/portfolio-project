@@ -29,13 +29,6 @@
   top: 98px;
 }
 
-.about-me-skills-btn::after {
-  content: url('../img/arrow-narrow-right.svg');
-}
-.swiper-slide-active .about-me-skills-div {
-  background-color: #ed3b44;
-}
-
 @media screen and (min-width: 768px) {
   .about-me-skills-item .about-me-skills-div {
     height: 200px;

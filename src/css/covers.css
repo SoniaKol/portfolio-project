@@ -9,16 +9,8 @@
   overflow: hidden;
   width: 100%;
   height: 508px;
-  background-image: url('../img/covers-bg.png'), url('../img/covers-bg.png');
   background-size: cover;
   background-position: top, bottom;
-}
-
-@media (min-resolution: 192dpi) {
-  .covers-container {
-    background-image: url('../img/covers-bg@2x.png'),
-      url('../img/covers-bg@2x.png');
-  }
 }
 
 .covers-line {

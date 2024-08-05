@@ -10,9 +10,6 @@
   text-transform: uppercase;
   color: #fafafa;
 }
-.footer-title span {
-  color: #ed3b44;
-}
 .footer-logo {
   display: inline;
   width: 44px;
@@ -50,7 +47,6 @@
   width: 100px;
   height: 100px;
   border-radius: 100%;
-  background-color: #ed3b44;
   margin-top: 16px;
   font-weight: 500;
   font-size: 16px;
@@ -62,9 +58,7 @@
   border: none;
   transition: background-color 250ms ease-in-out;
 }
-.footer-form-button:hover {
-  background-color: #e0373f;
-}
+
 .footer-list {
   display: flex;
   flex-wrap: wrap;
@@ -124,7 +118,6 @@
 
   .footer-link {
     padding: 18px 32px;
-
     font-size: 16px;
   }
 }
