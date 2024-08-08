@@ -14,5 +14,8 @@ import {
 import { projectSwiper } from './js/projects';
 import { reviewsSwiper, getReviews } from './js/reviews';
 import { footerForm, footerFormHandler } from './js/work-together';
+import { colorBtn, elements, colors } from './js/color-themes-data';
+import { changeColor, currentColor } from './js/color-themes';
 
+changeColor(currentColor);
 getReviews();
