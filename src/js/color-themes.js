@@ -1,6 +1,7 @@
 import { colorBtn, elements, colors } from './color-themes-data';
 
 let currentColor = colors.darkRedColorTheme;
+const KEY = 'color-theme';
 
 colorBtn.darkRed.addEventListener('click', () => {
   changeColor(colors.darkRedColorTheme);
@@ -28,6 +29,7 @@ colorBtn.orange.addEventListener('click', () => {
 });
 
 function changeColor(colorObj) {
+  localStorage.setItem(KEY, JSON.stringify(colorObj));
   elements.headerBtn.classList.remove(currentColor.headerBtn);
   elements.headerBtn.classList.add(colorObj.headerBtn);
 
@@ -78,4 +80,4 @@ function changeColor(colorObj) {
   elements.footerBtn.classList.add(colorObj.footerBtn);
 }
 
-export { changeColor, currentColor };
+export { changeColor, currentColor, KEY };
